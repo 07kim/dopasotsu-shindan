@@ -26,8 +26,8 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Noto Sans JP"
 .hero-badge{display:inline-flex;align-items:center;gap:6px;background:#FFF0F1;border:1px solid #FFD0D3;border-radius:20px;padding:4px 12px;font-size:11px;font-weight:700;color:var(--red)}
 .badge-dot{width:6px;height:6px;background:var(--red);border-radius:50%;animation:blink 1.5s infinite}
 @keyframes blink{0%,100%{opacity:1}50%{opacity:.2}}
-.mercari-logo{font-size:14px;font-weight:800;color:var(--t2);letter-spacing:-.5px;display:flex;align-items:center;gap:4px}
-.mercari-logo::before{content:'m';display:inline-flex;align-items:center;justify-content:center;width:18px;height:18px;background:var(--red);color:#fff;border-radius:4px;font-size:12px;font-weight:900}
+.mercari-logo-wrap{display:flex;align-items:center}
+.mercari-logo-wrap img{height:22px;object-fit:contain}
 .hero-sticker{position:absolute;top:140px;right:14px;background:var(--red);color:#fff;width:92px;height:92px;border-radius:50%;display:flex;align-items:center;justify-content:center;transform:rotate(12deg);box-shadow:0 8px 20px rgba(227,43,54,.4);animation:float-stamp 3s ease-in-out infinite;z-index:10;padding:4px}
 .sticker-inner{width:100%;height:100%;border:2px dashed rgba(255,255,255,.6);border-radius:50%;display:flex;align-items:center;justify-content:center;text-align:center;font-size:11px;font-weight:900;line-height:1.35;letter-spacing:.5px}
 @keyframes float-stamp{0%,100%{transform:rotate(12deg) translateY(0) scale(1)}50%{transform:rotate(12deg) translateY(-8px) scale(1.05)}}
@@ -180,7 +180,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Noto Sans JP"
   <div class="hero">
     <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:16px;">
       <div class="hero-badge"><span class="badge-dot"></span>メルカリ公式 スマホ依存度チェック</div>
-      <div class="mercari-logo">mercari</div>
+      <div class="mercari-logo-wrap"><img src="assets/mercari_logo.png" alt="mercari"></div>
     </div>
     <p class="hero-lead">無意識のスクロール、そろそろやめない？<br>タイパ疲れのあなたへ送る処方箋</p>
     <h1 class="hero-app">ドパ卒診断</h1>
