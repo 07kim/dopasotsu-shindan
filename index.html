@@ -474,16 +474,16 @@ function getTitle(X1){
 function buildResult(){
   const{X1,X2,X3,X4}=calcScores();
   const title=getTitle(X1);
-  const env=X3>=0?'インドア':'フッ軽';
-  const asset=X2>=0?'三日坊主':'無趣味';
-  const social=X4>=0?'ソロ':'シェア';
+  const env=X3>=0?'インドア派':'アウトドア派';
+  const asset=X2>=0?'三日坊主タイプ':'ミニマリストタイプ';
+  const social=X4>=0?'ソロ活派':'シェア活派';
   const key=(X3>=0?'I':'O')+(X4>=0?'S':'G');
 
   const mbti = (X1>=0?'D':'M')+(X2>=0?'T':'F')+(X3>=0?'I':'O')+(X4>=0?'S':'G');
 
   document.querySelector('.r-badge').textContent='診断完了 ✓ '+mbti+'型';
   document.getElementById('r-title').textContent='【'+title+'】';
-  document.getElementById('r-type').textContent=env+'・'+asset+social;
+  document.getElementById('r-type').textContent=env+' ・ '+asset+' ・ '+social;
   document.getElementById('r-desc').innerHTML=(X1D[title]+'\n\n'+ENVD[key]).replace('\n\n','<br><br>');
 
   const makeBar = (lblL, lblR, cL, cR, score) => {
