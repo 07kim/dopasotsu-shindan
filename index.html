@@ -23,11 +23,9 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Noto Sans JP"
 .hero{padding:44px 22px 24px;flex:1;position:relative;overflow:hidden}
 .hero::before{content:'';position:absolute;top:-60px;right:-60px;width:200px;height:200px;background:var(--red);border-radius:50%;opacity:.05}
 .hero::after{content:'';position:absolute;bottom:-80px;left:-40px;width:240px;height:240px;background:var(--red);border-radius:50%;opacity:.03}
-.hero-badge{display:inline-flex;align-items:center;gap:6px;background:#FFF0F1;border:1px solid #FFD0D3;border-radius:20px;padding:4px 12px;font-size:11px;font-weight:700;color:var(--red)}
+.hero-badge{display:inline-flex;align-items:center;gap:6px;background:#FFF0F1;border:1px solid #FFD0D3;border-radius:20px;padding:4px 12px;font-size:11px;font-weight:700;color:var(--red);margin-bottom:18px}
 .badge-dot{width:6px;height:6px;background:var(--red);border-radius:50%;animation:blink 1.5s infinite}
 @keyframes blink{0%,100%{opacity:1}50%{opacity:.2}}
-.mercari-logo-wrap{display:flex;align-items:center}
-.mercari-logo-wrap img{height:22px;object-fit:contain}
 .hero-sticker{position:absolute;top:140px;right:14px;background:var(--red);color:#fff;width:92px;height:92px;border-radius:50%;display:flex;align-items:center;justify-content:center;transform:rotate(12deg);box-shadow:0 8px 20px rgba(227,43,54,.4);animation:float-stamp 3s ease-in-out infinite;z-index:10;padding:4px}
 .sticker-inner{width:100%;height:100%;border:2px dashed rgba(255,255,255,.6);border-radius:50%;display:flex;align-items:center;justify-content:center;text-align:center;font-size:11px;font-weight:900;line-height:1.35;letter-spacing:.5px}
 @keyframes float-stamp{0%,100%{transform:rotate(12deg) translateY(0) scale(1)}50%{transform:rotate(12deg) translateY(-8px) scale(1.05)}}
@@ -178,10 +176,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Noto Sans JP"
 
 <div class="page active" id="page-1">
   <div class="hero">
-    <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:16px;">
-      <div class="hero-badge"><span class="badge-dot"></span>メルカリ公式 スマホ依存度チェック</div>
-      <div class="mercari-logo-wrap"><img src="assets/mercari_logo.png" alt="mercari"></div>
-    </div>
+    <div class="hero-badge"><span class="badge-dot"></span>メルカリ公式 スマホ依存度チェック</div>
     <p class="hero-lead">無意識のスクロール、そろそろやめない？<br>タイパ疲れのあなたへ送る処方箋</p>
     <h1 class="hero-app">ドパ卒診断</h1>
     <h2 class="hero-h1">今日、何時間<br>画面に溶かした？</h2>
