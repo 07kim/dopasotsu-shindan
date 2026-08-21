@@ -93,7 +93,7 @@
     .sidebar {
       position: absolute;
       right: 10px;
-      bottom: 140px;
+      bottom: 230px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -240,11 +240,11 @@
     .content {
       position: absolute;
       inset: 0;
-      bottom: 72px;
+      bottom: 140px; /* TikTokの下部UI(キャプション等)を避けるための余白 */
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
-      padding: 0 16px 24px;
+      padding: 0 16px;
       z-index: 5;
     }
 
@@ -284,7 +284,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin-bottom: 16px;
+      margin-bottom: 70px;
       animation: fadeInUp .7s ease .8s both;
     }
 
@@ -510,11 +510,6 @@
       </div>
 
       <div class="sb-item">
-        <div class="sb-icon">💬</div>
-        <div class="sb-count">400</div>
-      </div>
-
-      <div class="sb-item">
         <div class="sb-icon" style="font-size:20px">↗</div>
         <div class="sb-count">Share</div>
       </div>
@@ -529,7 +524,10 @@
 
       <!-- ブランド -->
       <div class="brand-block">
-        <div class="brand-subtitle">あなたのスマホ依存度と<br>隠れた本音から導き出す</div>
+        <div class="brand-subtitle">
+          あなたのスマホ依存度と<br>隠れた本音から導き出す<br>
+          <span style="color:#FACC15;font-weight:900;font-size:15px;display:inline-block;margin-top:6px;letter-spacing:.05em;text-shadow:0 2px 8px rgba(0,0,0,1);">＼ 話題の16タイプ診断 ／</span>
+        </div>
         <div class="brand-title">ドパ卒<br><span class="red">診断</span></div>
         <div class="brand-tagline">〜スマホ依存から抜け出す処方箋〜</div>
       </div>
